@@ -1,6 +1,15 @@
 # Etape 1 
 ## shema relationnel
-- PLAT(__id_plat__,nom_plat,pu)
+- PLAT(__id_plat__,nom_plat,pu,id_categorie) (modifie)
 ## Question piege
 - Je choisis integer pour le pu
 - Comme identifiant je choisis id_plat 
+
+
+# Etape 2 
+## shema relationnel;
+- CATEGORIE(__id_categorie__,libelle) (nouveau)
+## question piege
+- il ne faut pas ajouter une colonne categorie dans plat puisque une categorie peux etre attibue a plusieurs plat (`one to many`) 
+- des erreurs de frappe peuvent creer deux different categorie
+- exemple : categorie `plat malagasy` et `plat gasy` sont different  
