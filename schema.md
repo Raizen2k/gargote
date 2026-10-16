@@ -18,3 +18,12 @@
 ## schema
 - COMMANDE(__id_commande__,description?,date)
 - COMMANDE_DETAIL(__id_commande_detail__,#id_commmande,#id_plat,quantite)
+## piege 
+- Je place quatite dans COMMANDE_DETAIL 
+
+# Etape 4 
+## schema 
+- CLIENT (__id_client__,nom_client)
+## piege 
+- La cle etrangere n'est pas NULL 
+- Il me faut LEFT JOIN 
